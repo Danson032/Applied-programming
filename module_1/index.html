@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Auther" content="Danson Nganga" />
+    <title>Student Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Task Manager</h1>
+
+      <div class="form">
+        <input type="text" id="title" placeholder="Task Title" />
+
+        <input type="text" id="course" placeholder="Course" />
+
+        <input type="date" id="dueDate" />
+
+        <select id="status">
+          <option value="Pending">Pending</option>
+          <option value="Completed">Completed</option>
+        </select>
+
+        <button id="addBtn">Add Task</button>
+      </div>
+
+      <h2>My Tasks</h2>
+
+      <div id="taskList"></div>
+    </div>
+  </body>
+</html>

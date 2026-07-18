@@ -7,7 +7,7 @@ The software is a **Student Task Manager** that allows users to organize their a
 The purpose of creating this software was to gain practical experience working with cloud databases, understand CRUD (Create, Read, Update, Delete) operations, and learn how to integrate Firebase Firestore with a JavaScript web application.
 
 **Software Demo Video:**  
-[Software Demo Video]([https://youtu.be/jlhVh4vKnzk])
+[Software Demo Video](https://youtu.be/jlhVh4vKnzk)
 
 # Development Environment
 

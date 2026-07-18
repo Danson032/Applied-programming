@@ -1,23 +1,41 @@
 # Overview
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
+As a software engineer, I am continuously improving my skills in building applications that use cloud-based services. This project helped me learn how to connect a web application to a cloud database and perform real-time data management using Firebase Firestore.
 
-{Provide a description of your software}
+The software is a **Student Task Manager** that allows users to organize their academic tasks. Users can add new tasks, view existing tasks, mark tasks as completed, and delete tasks they no longer need. All task information is stored in Firebase Firestore, allowing the data to persist even after the application is closed or refreshed.
 
-{Describe your purpose for creating this software.}
+The purpose of creating this software was to gain practical experience working with cloud databases, understand CRUD (Create, Read, Update, Delete) operations, and learn how to integrate Firebase Firestore with a JavaScript web application.
 
-{Provide a link to your YouTube demonstration.  It should be a one minute demo of the software running and a walkthrough of the code.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+**Software Demo Video:**  
+[https://youtu.be/jlhVh4vKnzk]
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+## Tools Used
 
-{Describe the programming language that you used}
+- Visual Studio Code
+- Firebase Console
+- Firebase Firestore
+- Google Chrome
+- GitHub
+- Live Server (VS Code Extension)
+
+## Programming Language
+
+- HTML5
+- CSS3
+- JavaScript (ES6 Modules)
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+- Firebase Documentation  
+  https://firebase.google.com/docs
+
+- Firebase Firestore Documentation  
+  https://firebase.google.com/docs/firestore
+
+- MDN Web Docs (JavaScript)  
+  https://developer.mozilla.org/
+
+- Visual Studio Code Documentation  
+  https://code.visualstudio.com/docs

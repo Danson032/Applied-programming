@@ -1,0 +1,41 @@
+mutation CreatePost($content: String!, $neighborhoodId: UUID!) @auth(level: USER) {
+  post_insert(data: {
+    content: $content,
+    neighborhoodId: $neighborhoodId,
+    authorId_expr: "auth.uid",
+    createdAt_expr: "request.time"
+  })
+}
+
+mutation CreateComment($text: String!, $postId: UUID!) @auth(level: USER) {
+  comment_insert(data: {
+    text: $text,
+    postId: $postId,
+    authorId_expr: "auth.uid",
+    createdAt_expr: "request.time"
+  })
+}
+
+query ListNeighborhoodEvents($neighborhoodId: UUID!) @auth(level: PUBLIC) {
+  neighborhood(id: $neighborhoodId) {
+    name
+    events_on_neighborhood {
+      title
+      startTime
+      location
+      organizer {
+        displayName
+      }
+    }
+  }
+}
+
+query SearchPostsByNeighborhood($neighborhoodId: UUID!) @auth(level: PUBLIC) {
+  posts(where: {neighborhoodId: {eq: $neighborhoodId}}, orderBy: [{createdAt: DESC}]) {
+    content
+    createdAt
+    author {
+      displayName
+    }
+  }
+}

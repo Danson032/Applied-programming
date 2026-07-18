@@ -1,0 +1,36 @@
+type User @table {
+  displayName: String!
+  email: String!
+  homeAddress: String!
+  phoneNumber: String
+  bio: String
+}
+
+type Neighborhood @table {
+  name: String!
+  locationCoordinates: String!
+  description: String
+}
+
+type Post @table {
+  content: String!
+  createdAt: Timestamp!
+  author: User!
+  neighborhood: Neighborhood!
+}
+
+type Comment @table {
+  text: String!
+  createdAt: Timestamp!
+  author: User!
+  post: Post!
+}
+
+type Event @table {
+  title: String!
+  startTime: Timestamp!
+  location: String!
+  description: String
+  organizer: User!
+  neighborhood: Neighborhood!
+}

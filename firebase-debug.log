@@ -1,0 +1,277 @@
+[debug] [2026-07-09T15:40:40.659Z] ----------------------------------------------------------------------
+[debug] [2026-07-09T15:40:40.662Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2026-07-09T15:40:40.663Z] CLI Version:   15.22.4
+[debug] [2026-07-09T15:40:40.663Z] Platform:      win32
+[debug] [2026-07-09T15:40:40.663Z] Node Version:  v24.15.0
+[debug] [2026-07-09T15:40:40.665Z] Detected Agent: unknown
+[debug] [2026-07-09T15:40:40.665Z] Time:          Thu Jul 09 2026 18:40:40 GMT+0300 (East Africa Time)
+[debug] [2026-07-09T15:40:40.665Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\BYU\Applied programming
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-07-09T15:41:18.650Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-07-09T15:41:18.650Z] > authorizing via signed-in user (dansonnganga019@gmail.com)
+[debug] [2026-07-09T15:41:18.652Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:41:18.652Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:41:18.654Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2026-07-09T15:41:19.756Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2026-07-09T15:41:19.757Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] 
+=== Dataconnect Setup
+[info] i  dataconnect: ensuring required API firebasedataconnect.googleapis.com is enabled... 
+[debug] [2026-07-09T15:41:23.502Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:41:23.502Z] Checked if tokens are valid: true, expires at: 1783615211679
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2026-07-09T15:41:23.505Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:41:23.505Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:41:23.506Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-07-09T15:41:23.506Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/firebasedataconnect.googleapis.com  x-goog-user-project=my-task-manager-3e8b1
+[debug] [2026-07-09T15:41:23.518Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/sqladmin.googleapis.com [none]
+[debug] [2026-07-09T15:41:23.519Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/sqladmin.googleapis.com  x-goog-user-project=my-task-manager-3e8b1
+[debug] [2026-07-09T15:41:25.481Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-07-09T15:41:25.482Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/firebasedataconnect.googleapis.com [omitted]
+[warn] !  dataconnect: missing required API firebasedataconnect.googleapis.com. Enabling now... 
+[debug] [2026-07-09T15:41:25.485Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:41:25.486Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:41:25.486Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/firebasedataconnect.googleapis.com:enable [none]
+[debug] [2026-07-09T15:41:25.486Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/firebasedataconnect.googleapis.com:enable  x-goog-user-project=my-task-manager-3e8b1
+[debug] [2026-07-09T15:41:25.880Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/sqladmin.googleapis.com 200
+[debug] [2026-07-09T15:41:25.880Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/sqladmin.googleapis.com [omitted]
+[warn] !  dataconnect: missing required API sqladmin.googleapis.com. Enabling now... 
+[debug] [2026-07-09T15:41:25.882Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:41:25.883Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:41:25.883Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/sqladmin.googleapis.com:enable [none]
+[debug] [2026-07-09T15:41:25.884Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/sqladmin.googleapis.com:enable  x-goog-user-project=my-task-manager-3e8b1
+[debug] [2026-07-09T15:41:26.351Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/firebasedataconnect.googleapis.com:enable 200
+[debug] [2026-07-09T15:41:26.352Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/firebasedataconnect.googleapis.com:enable [omitted]
+[debug] [2026-07-09T15:41:27.971Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/sqladmin.googleapis.com:enable 200
+[debug] [2026-07-09T15:41:27.971Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/sqladmin.googleapis.com:enable [omitted]
+[debug] [2026-07-09T15:41:38.060Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:41:38.061Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:41:38.062Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/-/services [none]
+[debug] [2026-07-09T15:41:40.607Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/-/services 200
+[debug] [2026-07-09T15:41:40.608Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/-/services {}
+[debug] [2026-07-09T15:45:51.584Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:45:51.585Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:45:51.585Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/cloudbilling.googleapis.com [none]
+[debug] [2026-07-09T15:45:51.585Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/cloudbilling.googleapis.com  x-goog-user-project=my-task-manager-3e8b1
+[debug] [2026-07-09T15:45:53.704Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/cloudbilling.googleapis.com 200
+[debug] [2026-07-09T15:45:53.704Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/cloudbilling.googleapis.com [omitted]
+[debug] [2026-07-09T15:45:53.705Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:45:53.705Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:45:53.706Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/cloudbilling.googleapis.com:enable [none]
+[debug] [2026-07-09T15:45:53.706Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/cloudbilling.googleapis.com:enable  x-goog-user-project=my-task-manager-3e8b1
+[debug] [2026-07-09T15:45:55.834Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/cloudbilling.googleapis.com:enable 200
+[debug] [2026-07-09T15:45:55.835Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/cloudbilling.googleapis.com:enable [omitted]
+[debug] [2026-07-09T15:46:05.965Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:46:05.965Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:46:05.966Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/my-task-manager-3e8b1/billingInfo [none]
+[debug] [2026-07-09T15:46:05.967Z] >>> [apiv2][(partial)header] GET https://cloudbilling.googleapis.com/v1/projects/my-task-manager-3e8b1/billingInfo  x-goog-user-project=my-task-manager-3e8b1
+[debug] [2026-07-09T15:46:06.893Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/my-task-manager-3e8b1/billingInfo 200
+[debug] [2026-07-09T15:46:06.893Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/my-task-manager-3e8b1/billingInfo {"name":"projects/my-task-manager-3e8b1/billingInfo","projectId":"my-task-manager-3e8b1","billingAccountName":"","billingEnabled":false}
+[debug] [2026-07-09T15:46:06.894Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:46:06.894Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:46:06.895Z] >>> [apiv2][query] GET https://monitoring.googleapis.com/v3/projects/my-task-manager-3e8b1/timeSeries/ filter=metric.type%3D%22serviceruntime.googleapis.com%2Fquota%2Fallocation%2Fusage%22+AND+metric.label.quota_metric+%3D+%22sqladmin.googleapis.com%2Ffdc_lifetime_free_trial_per_project%22&interval.endTime=2026-07-09T15%3A46%3A06.894Z&interval.startTime=2026-07-02T15%3A46%3A06.894Z
+[debug] [2026-07-09T15:46:08.626Z] <<< [apiv2][status] GET https://monitoring.googleapis.com/v3/projects/my-task-manager-3e8b1/timeSeries/ 200
+[debug] [2026-07-09T15:46:08.626Z] <<< [apiv2][body] GET https://monitoring.googleapis.com/v3/projects/my-task-manager-3e8b1/timeSeries/ {"unit":"1"}
+[info] +  dataconnect: CloudSQL no cost trial available! 
+[debug] [2026-07-09T15:46:08.627Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:46:08.627Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:46:08.627Z] >>> [apiv2][query] GET https://sqladmin.googleapis.com/v1/projects/my-task-manager-3e8b1/instances [none]
+[debug] [2026-07-09T15:46:10.365Z] <<< [apiv2][status] GET https://sqladmin.googleapis.com/v1/projects/my-task-manager-3e8b1/instances 200
+[debug] [2026-07-09T15:46:10.365Z] <<< [apiv2][body] GET https://sqladmin.googleapis.com/v1/projects/my-task-manager-3e8b1/instances {}
+[debug] [2026-07-09T15:46:10.365Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:46:10.366Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:46:10.366Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations [none]
+[debug] [2026-07-09T15:46:12.055Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations 200
+[debug] [2026-07-09T15:46:12.057Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations {"locations":[{"name":"projects/my-task-manager-3e8b1/locations/asia-east1","locationId":"asia-east1","displayName":"Taiwan"},{"name":"projects/my-task-manager-3e8b1/locations/asia-east2","locationId":"asia-east2","displayName":"Hong Kong"},{"name":"projects/my-task-manager-3e8b1/locations/asia-northeast1","locationId":"asia-northeast1","displayName":"Tokyo"},{"name":"projects/my-task-manager-3e8b1/locations/asia-northeast2","locationId":"asia-northeast2","displayName":"Osaka"},{"name":"projects/my-task-manager-3e8b1/locations/asia-northeast3","locationId":"asia-northeast3","displayName":"Seoul"},{"name":"projects/my-task-manager-3e8b1/locations/asia-south1","locationId":"asia-south1","displayName":"Mumbai"},{"name":"projects/my-task-manager-3e8b1/locations/asia-southeast1","locationId":"asia-southeast1","displayName":"Singapore"},{"name":"projects/my-task-manager-3e8b1/locations/asia-southeast2","locationId":"asia-southeast2","displayName":"Jakarta"},{"name":"projects/my-task-manager-3e8b1/locations/australia-southeast1","locationId":"australia-southeast1","displayName":"Sydney"},{"name":"projects/my-task-manager-3e8b1/locations/australia-southeast2","locationId":"australia-southeast2","displayName":"Melbourne"},{"name":"projects/my-task-manager-3e8b1/locations/europe-central2","locationId":"europe-central2","displayName":"Warsaw"},{"name":"projects/my-task-manager-3e8b1/locations/europe-north1","locationId":"europe-north1","displayName":"Finland"},{"name":"projects/my-task-manager-3e8b1/locations/europe-southwest1","locationId":"europe-southwest1","displayName":"Madrid"},{"name":"projects/my-task-manager-3e8b1/locations/europe-west1","locationId":"europe-west1","displayName":"Belgium"},{"name":"projects/my-task-manager-3e8b1/locations/europe-west2","locationId":"europe-west2","displayName":"London"},{"name":"projects/my-task-manager-3e8b1/locations/europe-west3","locationId":"europe-west3","displayName":"Frankfurt"},{"name":"projects/my-task-manager-3e8b1/locations/europe-west4","locationId":"europe-west4","displayName":"Netherlands"},{"name":"projects/my-task-manager-3e8b1/locations/europe-west6","locationId":"europe-west6","displayName":"Zurich"},{"name":"projects/my-task-manager-3e8b1/locations/europe-west8","locationId":"europe-west8","displayName":"Milan"},{"name":"projects/my-task-manager-3e8b1/locations/europe-west9","locationId":"europe-west9","displayName":"Paris"},{"name":"projects/my-task-manager-3e8b1/locations/me-west1","locationId":"me-west1","displayName":"Tel Aviv"},{"name":"projects/my-task-manager-3e8b1/locations/northamerica-northeast1","locationId":"northamerica-northeast1","displayName":"Montréal"},{"name":"projects/my-task-manager-3e8b1/locations/northamerica-northeast2","locationId":"northamerica-northeast2","displayName":"Toronto"},{"name":"projects/my-task-manager-3e8b1/locations/southamerica-east1","locationId":"southamerica-east1","displayName":"São Paulo"},{"name":"projects/my-task-manager-3e8b1/locations/southamerica-west1","locationId":"southamerica-west1","displayName":"Santiago"},{"name":"projects/my-task-manager-3e8b1/locations/us-central1","locationId":"us-central1","displayName":"Iowa"},{"name":"projects/my-task-manager-3e8b1/locations/us-east1","locationId":"us-east1","displayName":"South Carolina"},{"name":"projects/my-task-manager-3e8b1/locations/us-east4","locationId":"us-east4","displayName":"Northern Virginia"},{"name":"projects/my-task-manager-3e8b1/locations/us-south1","locationId":"us-south1","displayName":"Dallas"},{"name":"projects/my-task-manager-3e8b1/locations/us-west1","locationId":"us-west1","displayName":"Oregon"},{"name":"projects/my-task-manager-3e8b1/locations/us-west2","locationId":"us-west2","displayName":"Los Angeles"},{"name":"projects/my-task-manager-3e8b1/locations/us-west3","locationId":"us-west3","displayName":"Salt Lake City"},{"name":"projects/my-task-manager-3e8b1/locations/us-west4","locationId":"us-west4","displayName":"Las Vegas"}]}
+[warn] !  dataconnect: Cannot detect an existing app in the current directory. 
+[debug] [2026-07-09T15:46:39.979Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:46:39.979Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:46:39.979Z] >>> [apiv2][query] POST https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/services service_id=appliedprogramming
+[debug] [2026-07-09T15:46:39.979Z] >>> [apiv2][body] POST https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/services {"name":"projects/my-task-manager-3e8b1/locations/us-east4/services/appliedprogramming"}
+[debug] [2026-07-09T15:46:45.809Z] <<< [apiv2][status] POST https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/services 200
+[debug] [2026-07-09T15:46:45.810Z] <<< [apiv2][body] POST https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/services {"name":"projects/my-task-manager-3e8b1/locations/us-east4/operations/operation-1783612002272-6562f87d00689-9a3dba40-68e7557f","metadata":{"@type":"type.googleapis.com/google.firebase.dataconnect.v1.OperationMetadata","createTime":"2026-07-09T15:46:46.250405115Z","target":"projects/my-task-manager-3e8b1/locations/us-east4/services/appliedprogramming","verb":"create","requestedCancellation":false,"apiVersion":"v1"},"done":false}
+[debug] [2026-07-09T15:46:45.814Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:46:45.814Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:46:45.815Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/operations/operation-1783612002272-6562f87d00689-9a3dba40-68e7557f [none]
+[debug] [2026-07-09T15:46:46.177Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/operations/operation-1783612002272-6562f87d00689-9a3dba40-68e7557f 200
+[debug] [2026-07-09T15:46:46.178Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/operations/operation-1783612002272-6562f87d00689-9a3dba40-68e7557f {"name":"projects/my-task-manager-3e8b1/locations/us-east4/operations/operation-1783612002272-6562f87d00689-9a3dba40-68e7557f","metadata":{"@type":"type.googleapis.com/google.firebase.dataconnect.v1.OperationMetadata","createTime":"2026-07-09T15:46:46.250405115Z","target":"projects/my-task-manager-3e8b1/locations/us-east4/services/appliedprogramming","verb":"create","requestedCancellation":false,"apiVersion":"v1"},"done":false}
+[debug] [2026-07-09T15:46:46.683Z] [LRO Poller] Retrying task index 0
+[debug] [2026-07-09T15:46:46.685Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:46:46.685Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:46:46.685Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/operations/operation-1783612002272-6562f87d00689-9a3dba40-68e7557f [none]
+[debug] [2026-07-09T15:46:46.941Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/operations/operation-1783612002272-6562f87d00689-9a3dba40-68e7557f 200
+[debug] [2026-07-09T15:46:46.942Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/operations/operation-1783612002272-6562f87d00689-9a3dba40-68e7557f {"name":"projects/my-task-manager-3e8b1/locations/us-east4/operations/operation-1783612002272-6562f87d00689-9a3dba40-68e7557f","metadata":{"@type":"type.googleapis.com/google.firebase.dataconnect.v1.OperationMetadata","createTime":"2026-07-09T15:46:46.250405115Z","target":"projects/my-task-manager-3e8b1/locations/us-east4/services/appliedprogramming","verb":"create","requestedCancellation":false,"apiVersion":"v1"},"done":false}
+[debug] [2026-07-09T15:46:47.950Z] [LRO Poller] Retrying task index 0
+[debug] [2026-07-09T15:46:47.951Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:46:47.951Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:46:47.952Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/operations/operation-1783612002272-6562f87d00689-9a3dba40-68e7557f [none]
+[debug] [2026-07-09T15:46:48.230Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/operations/operation-1783612002272-6562f87d00689-9a3dba40-68e7557f 200
+[debug] [2026-07-09T15:46:48.230Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/operations/operation-1783612002272-6562f87d00689-9a3dba40-68e7557f {"name":"projects/my-task-manager-3e8b1/locations/us-east4/operations/operation-1783612002272-6562f87d00689-9a3dba40-68e7557f","metadata":{"@type":"type.googleapis.com/google.firebase.dataconnect.v1.OperationMetadata","createTime":"2026-07-09T15:46:46.250405115Z","endTime":"2026-07-09T15:46:47.563803765Z","target":"projects/my-task-manager-3e8b1/locations/us-east4/services/appliedprogramming","verb":"create","requestedCancellation":false,"apiVersion":"v1"},"done":true,"response":{"@type":"type.googleapis.com/google.firebase.dataconnect.v1.Service","name":"projects/my-task-manager-3e8b1/locations/us-east4/services/appliedprogramming","createTime":"2026-07-09T15:46:46.246739603Z","updateTime":"2026-07-09T15:46:46.246739603Z","uid":"ef179fbc-e098-42c6-bd3e-b405c0327739","reconciling":false,"etag":"glW7U3kXN6KUuJ_JUy5Dro8Etgh0uAM2zoNaZOtoKns"}}
+[debug] [2026-07-09T15:46:48.236Z] [Agent Service] Reusable cURL command:\ncurl -X POST "https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/services/-:generateSchema" -H "Content-Type: application/json" -H "Authorization: Bearer $(gcloud auth print-access-token)" -d '{"name":"projects/my-task-manager-3e8b1/locations/us-east4/services/-","prompt":"n"}'
+[debug] [2026-07-09T15:46:48.236Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:46:48.236Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:46:48.236Z] >>> [apiv2][query] POST https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/services/-:generateSchema [none]
+[debug] [2026-07-09T15:46:48.237Z] >>> [apiv2][body] POST https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/services/-:generateSchema {"name":"projects/my-task-manager-3e8b1/locations/us-east4/services/-","prompt":"n"}
+[debug] [2026-07-09T15:46:49.519Z] <<< [apiv2][status] POST https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/services/-:generateSchema 200
+[debug] [2026-07-09T15:46:49.519Z] <<< [apiv2][body] POST https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/services/-:generateSchema [stream]
+[debug] [2026-07-09T15:46:52.854Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:46:52.855Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:46:52.856Z] [Agent Service] Reusable cURL command:\ncurl -X POST "https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/services/-:generateQuery" -H "Content-Type: application/json" -H "Authorization: Bearer $(gcloud auth print-access-token)" -d '{"name":"projects/my-task-manager-3e8b1/locations/us-east4/services/-","prompt":"Create 4 operations for an app using the instance schema with proper authentication.","schemas":[{"name":"projects/my-task-manager-3e8b1/locations/us-east4/services/appliedprogramming/schemas/main","datasources":[],"source":{"files":[{"path":"schema.gql","content":"type User @table {\n  displayName: String!\n  email: String!\n  homeAddress: String!\n  phoneNumber: String\n  bio: String\n}\n\ntype Neighborhood @table {\n  name: String!\n  locationCoordinates: String!\n  description: String\n}\n\ntype Post @table {\n  content: String!\n  createdAt: Timestamp!\n  author: User!\n  neighborhood: Neighborhood!\n}\n\ntype Comment @table {\n  text: String!\n  createdAt: Timestamp!\n  author: User!\n  post: Post!\n}\n\ntype Event @table {\n  title: String!\n  startTime: Timestamp!\n  location: String!\n  description: String\n  organizer: User!\n  neighborhood: Neighborhood!\n}"}]}}]}'
+[debug] [2026-07-09T15:46:52.857Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:46:52.857Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:46:52.857Z] [Agent Service] Reusable cURL command:\ncurl -X POST "https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/services/-:generateQuery" -H "Content-Type: application/json" -H "Authorization: Bearer $(gcloud auth print-access-token)" -d '{"name":"projects/my-task-manager-3e8b1/locations/us-east4/services/-","prompt":"Create a mutation to populate the database with some seed data.","schemas":[{"name":"projects/my-task-manager-3e8b1/locations/us-east4/services/appliedprogramming/schemas/main","datasources":[],"source":{"files":[{"path":"schema.gql","content":"type User @table {\n  displayName: String!\n  email: String!\n  homeAddress: String!\n  phoneNumber: String\n  bio: String\n}\n\ntype Neighborhood @table {\n  name: String!\n  locationCoordinates: String!\n  description: String\n}\n\ntype Post @table {\n  content: String!\n  createdAt: Timestamp!\n  author: User!\n  neighborhood: Neighborhood!\n}\n\ntype Comment @table {\n  text: String!\n  createdAt: Timestamp!\n  author: User!\n  post: Post!\n}\n\ntype Event @table {\n  title: String!\n  startTime: Timestamp!\n  location: String!\n  description: String\n  organizer: User!\n  neighborhood: Neighborhood!\n}"}]}}]}'
+[debug] [2026-07-09T15:46:52.858Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:46:52.858Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:46:52.859Z] >>> [apiv2][query] PATCH https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/services/appliedprogramming/schemas/main allowMissing=true&validateOnly=false
+[debug] [2026-07-09T15:46:52.859Z] >>> [apiv2][body] PATCH https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/services/appliedprogramming/schemas/main {"name":"projects/my-task-manager-3e8b1/locations/us-east4/services/appliedprogramming/schemas/main","datasources":[{"postgresql":{}}],"source":{"files":[{"path":"schema.gql","content":"type User @table {\n  displayName: String!\n  email: String!\n  homeAddress: String!\n  phoneNumber: String\n  bio: String\n}\n\ntype Neighborhood @table {\n  name: String!\n  locationCoordinates: String!\n  description: String\n}\n\ntype Post @table {\n  content: String!\n  createdAt: Timestamp!\n  author: User!\n  neighborhood: Neighborhood!\n}\n\ntype Comment @table {\n  text: String!\n  createdAt: Timestamp!\n  author: User!\n  post: Post!\n}\n\ntype Event @table {\n  title: String!\n  startTime: Timestamp!\n  location: String!\n  description: String\n  organizer: User!\n  neighborhood: Neighborhood!\n}"}]}}
+[debug] [2026-07-09T15:46:52.861Z] >>> [apiv2][query] POST https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/services/-:generateQuery [none]
+[debug] [2026-07-09T15:46:52.861Z] >>> [apiv2][body] POST https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/services/-:generateQuery {"name":"projects/my-task-manager-3e8b1/locations/us-east4/services/-","prompt":"Create 4 operations for an app using the instance schema with proper authentication.","schemas":[{"name":"projects/my-task-manager-3e8b1/locations/us-east4/services/appliedprogramming/schemas/main","datasources":[],"source":{"files":[{"path":"schema.gql","content":"type User @table {\n  displayName: String!\n  email: String!\n  homeAddress: String!\n  phoneNumber: String\n  bio: String\n}\n\ntype Neighborhood @table {\n  name: String!\n  locationCoordinates: String!\n  description: String\n}\n\ntype Post @table {\n  content: String!\n  createdAt: Timestamp!\n  author: User!\n  neighborhood: Neighborhood!\n}\n\ntype Comment @table {\n  text: String!\n  createdAt: Timestamp!\n  author: User!\n  post: Post!\n}\n\ntype Event @table {\n  title: String!\n  startTime: Timestamp!\n  location: String!\n  description: String\n  organizer: User!\n  neighborhood: Neighborhood!\n}"}]}}]}
+[debug] [2026-07-09T15:46:52.869Z] >>> [apiv2][query] POST https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/services/-:generateQuery [none]
+[debug] [2026-07-09T15:46:52.870Z] >>> [apiv2][body] POST https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/services/-:generateQuery {"name":"projects/my-task-manager-3e8b1/locations/us-east4/services/-","prompt":"Create a mutation to populate the database with some seed data.","schemas":[{"name":"projects/my-task-manager-3e8b1/locations/us-east4/services/appliedprogramming/schemas/main","datasources":[],"source":{"files":[{"path":"schema.gql","content":"type User @table {\n  displayName: String!\n  email: String!\n  homeAddress: String!\n  phoneNumber: String\n  bio: String\n}\n\ntype Neighborhood @table {\n  name: String!\n  locationCoordinates: String!\n  description: String\n}\n\ntype Post @table {\n  content: String!\n  createdAt: Timestamp!\n  author: User!\n  neighborhood: Neighborhood!\n}\n\ntype Comment @table {\n  text: String!\n  createdAt: Timestamp!\n  author: User!\n  post: Post!\n}\n\ntype Event @table {\n  title: String!\n  startTime: Timestamp!\n  location: String!\n  description: String\n  organizer: User!\n  neighborhood: Neighborhood!\n}"}]}}]}
+[debug] [2026-07-09T15:46:53.351Z] <<< [apiv2][status] PATCH https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/services/appliedprogramming/schemas/main 200
+[debug] [2026-07-09T15:46:53.352Z] <<< [apiv2][body] PATCH https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/services/appliedprogramming/schemas/main {"name":"projects/my-task-manager-3e8b1/locations/us-east4/operations/operation-1783612013768-6562f887f6ff3-cbfa6a25-b31b66e6","metadata":{"@type":"type.googleapis.com/google.firebase.dataconnect.v1.OperationMetadata","createTime":"2026-07-09T15:46:53.794039355Z","target":"projects/my-task-manager-3e8b1/locations/us-east4/services/appliedprogramming/schemas/main","verb":"update","requestedCancellation":false,"apiVersion":"v1"},"done":false}
+[debug] [2026-07-09T15:46:53.352Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:46:53.352Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:46:53.352Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/operations/operation-1783612013768-6562f887f6ff3-cbfa6a25-b31b66e6 [none]
+[debug] [2026-07-09T15:46:53.634Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/operations/operation-1783612013768-6562f887f6ff3-cbfa6a25-b31b66e6 200
+[debug] [2026-07-09T15:46:53.634Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/operations/operation-1783612013768-6562f887f6ff3-cbfa6a25-b31b66e6 {"name":"projects/my-task-manager-3e8b1/locations/us-east4/operations/operation-1783612013768-6562f887f6ff3-cbfa6a25-b31b66e6","metadata":{"@type":"type.googleapis.com/google.firebase.dataconnect.v1.OperationMetadata","createTime":"2026-07-09T15:46:53.794039355Z","endTime":"2026-07-09T15:46:54.010536122Z","target":"projects/my-task-manager-3e8b1/locations/us-east4/services/appliedprogramming/schemas/main","verb":"update","requestedCancellation":false,"apiVersion":"v1"},"done":true,"response":{"@type":"type.googleapis.com/google.firebase.dataconnect.v1.Schema","name":"projects/my-task-manager-3e8b1/locations/us-east4/services/appliedprogramming/schemas/main","createTime":"2026-07-09T15:46:53.786275906Z","updateTime":"2026-07-09T15:46:53.786275906Z","source":{"files":[{"path":"schema.gql","content":"type User @table {\n  displayName: String!\n  email: String!\n  homeAddress: String!\n  phoneNumber: String\n  bio: String\n}\n\ntype Neighborhood @table {\n  name: String!\n  locationCoordinates: String!\n  description: String\n}\n\ntype Post @table {\n  content: String!\n  createdAt: Timestamp!\n  author: User!\n  neighborhood: Neighborhood!\n}\n\ntype Comment @table {\n  text: String!\n  createdAt: Timestamp!\n  author: User!\n  post: Post!\n}\n\ntype Event @table {\n  title: String!\n  startTime: Timestamp!\n  location: String!\n  description: String\n  organizer: User!\n  neighborhood: Neighborhood!\n}"}]},"uid":"18f9d42c-9a78-4752-a5f6-f27245412b63","reconciling":false,"datasources":[{"postgresql":{"ephemeral":true}}],"etag":"5SeafIEK3K88PoKw3kqXEE8wlhXTtKdljBQOZOU8L4Q"}}
+[debug] [2026-07-09T15:46:54.541Z] <<< [apiv2][status] POST https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/services/-:generateQuery 200
+[debug] [2026-07-09T15:46:54.542Z] <<< [apiv2][body] POST https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/services/-:generateQuery [stream]
+[debug] [2026-07-09T15:46:54.571Z] <<< [apiv2][status] POST https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/services/-:generateQuery 200
+[debug] [2026-07-09T15:46:54.572Z] <<< [apiv2][body] POST https://firebasedataconnect.googleapis.com/v1/projects/my-task-manager-3e8b1/locations/us-east4/services/-:generateQuery [stream]
+[info] +  Wrote dataconnect\dataconnect.yaml 
+[info] +  Wrote dataconnect\seed_data.gql 
+[info] +  Wrote dataconnect\schema\schema.gql 
+[info] +  Wrote dataconnect\example\connector.yaml 
+[info] +  Wrote dataconnect\example\queries.gql 
+[info] i  dataconnect: No apps to setup SQL Connect Generated SDKs 
+[info] 
+=== Firestore Setup
+[info] i  firestore: ensuring required API firestore.googleapis.com is enabled... 
+[debug] [2026-07-09T15:47:00.917Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:47:00.917Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:47:00.917Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/firestore.googleapis.com [none]
+[debug] [2026-07-09T15:47:00.917Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/firestore.googleapis.com  x-goog-user-project=my-task-manager-3e8b1
+[debug] [2026-07-09T15:47:02.870Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/firestore.googleapis.com 200
+[debug] [2026-07-09T15:47:02.871Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/firestore.googleapis.com [omitted]
+[info] +  firestore: required API firestore.googleapis.com is enabled 
+[debug] [2026-07-09T15:47:02.973Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:47:02.973Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:47:02.973Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/my-task-manager-3e8b1/databases [none]
+[debug] [2026-07-09T15:47:04.366Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/my-task-manager-3e8b1/databases 200
+[debug] [2026-07-09T15:47:04.366Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/my-task-manager-3e8b1/databases {"databases":[{"name":"projects/my-task-manager-3e8b1/databases/(default)","uid":"0d3bdfe0-bbd1-4181-adc7-b8feb6ff9fe5","createTime":"2026-07-09T14:32:55.974806Z","updateTime":"2026-07-09T14:32:55.974806Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2026-07-09T14:47:04.889956Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","databaseEdition":"STANDARD","freeTier":true,"realtimeUpdatesMode":"REALTIME_UPDATES_MODE_ENABLED","etag":"IPi2ncn4xZUDMN3Q86roxZUD"}]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2026-07-09T15:47:20.384Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:47:20.384Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:47:20.384Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/my-task-manager-3e8b1/releases pageSize=10&pageToken=
+[debug] [2026-07-09T15:47:21.319Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/my-task-manager-3e8b1/releases 200
+[debug] [2026-07-09T15:47:21.320Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/my-task-manager-3e8b1/releases {"releases":[{"name":"projects/my-task-manager-3e8b1/releases/cloud.firestore","rulesetName":"projects/my-task-manager-3e8b1/rulesets/d6ff1683-d51f-450d-a59a-621a877aa481","createTime":"2026-07-09T14:32:58.351721Z","updateTime":"2026-07-09T14:32:58.351721Z"}]}
+[debug] [2026-07-09T15:47:21.320Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:47:21.320Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:47:21.321Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/my-task-manager-3e8b1/rulesets/d6ff1683-d51f-450d-a59a-621a877aa481 [none]
+[debug] [2026-07-09T15:47:22.099Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/my-task-manager-3e8b1/rulesets/d6ff1683-d51f-450d-a59a-621a877aa481 200
+[debug] [2026-07-09T15:47:22.099Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/my-task-manager-3e8b1/rulesets/d6ff1683-d51f-450d-a59a-621a877aa481 [omitted]
+[info] i  Downloaded the existing Firestore Security Rules from the Firebase console 
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2026-07-09T15:47:27.120Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:47:27.120Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:47:27.120Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:47:27.120Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:47:27.121Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/my-task-manager-3e8b1/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2026-07-09T15:47:27.122Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/my-task-manager-3e8b1/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2026-07-09T15:47:28.851Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/my-task-manager-3e8b1/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2026-07-09T15:47:28.852Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/my-task-manager-3e8b1/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/my-task-manager-3e8b1/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[debug] [2026-07-09T15:47:28.926Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/my-task-manager-3e8b1/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2026-07-09T15:47:28.927Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/my-task-manager-3e8b1/databases/(default)/collectionGroups/-/indexes {}
+[info] i  Downloaded the existing Firestore indexes from the Firebase console 
+[info] +  Wrote firestore.rules 
+[info] +  Wrote firestore.indexes.json 
+[info] 
+=== Genkit Setup
+[debug] [2026-07-09T15:47:52.157Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-07-09T15:47:52.158Z] > authorizing via signed-in user (dansonnganga019@gmail.com)
+[debug] [2026-07-09T15:47:52.158Z] [iam] checking project my-task-manager-3e8b1 for permissions ["firebase.projects.get"]
+[debug] [2026-07-09T15:47:52.158Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:47:52.158Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:47:52.159Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-task-manager-3e8b1:testIamPermissions [none]
+[debug] [2026-07-09T15:47:52.159Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-task-manager-3e8b1:testIamPermissions  x-goog-user-project=my-task-manager-3e8b1
+[debug] [2026-07-09T15:47:52.159Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-task-manager-3e8b1:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2026-07-09T15:47:54.454Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-task-manager-3e8b1:testIamPermissions 200
+[debug] [2026-07-09T15:47:54.454Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-task-manager-3e8b1:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2026-07-09T15:47:54.455Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:47:54.455Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:47:54.456Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:47:54.456Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:47:54.456Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-07-09T15:47:54.456Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/cloudfunctions.googleapis.com  x-goog-user-project=my-task-manager-3e8b1
+[debug] [2026-07-09T15:47:54.458Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/runtimeconfig.googleapis.com [none]
+[debug] [2026-07-09T15:47:54.458Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/runtimeconfig.googleapis.com  x-goog-user-project=my-task-manager-3e8b1
+[debug] [2026-07-09T15:47:56.246Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/runtimeconfig.googleapis.com 200
+[debug] [2026-07-09T15:47:56.247Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2026-07-09T15:47:56.510Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/cloudfunctions.googleapis.com 200
+[debug] [2026-07-09T15:47:56.511Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2026-07-09T15:47:56.512Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:47:56.512Z] Checked if tokens are valid: true, expires at: 1783615211679
+[debug] [2026-07-09T15:47:56.512Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2026-07-09T15:47:56.512Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/cloudfunctions.googleapis.com:enable  x-goog-user-project=my-task-manager-3e8b1
+[debug] [2026-07-09T15:47:58.627Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2026-07-09T15:47:58.627Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/my-task-manager-3e8b1/services/cloudfunctions.googleapis.com:enable [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/tsconfig.dev.json 
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/tsconfig.json 
+[info] +  Wrote functions/src/index.ts 
+[info] +  Wrote functions/.gitignore 
+[info] 
+[debug] [2026-07-09T15:53:22.004Z] ExitPromptError: User force closed the prompt with SIGINT
+    at Interface.sigint (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\@inquirer\core\dist\commonjs\lib\create-prompt.js:101:37)
+    at Interface.emit (node:events:509:28)
+    at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1327:18)
+    at ReadStream.onkeypress (node:internal/readline/interface:284:20)
+    at ReadStream.emit (node:events:521:24)
+    at emitKeys (node:internal/readline/utils:371:14)
+    at emitKeys.next (<anonymous>)
+    at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+    at ReadStream.emit (node:events:509:28)
+    at addChunk (node:internal/streams/readable:563:12)
+[error] 
+[error] Error: An unexpected error has occurred.

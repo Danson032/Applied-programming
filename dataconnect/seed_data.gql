@@ -1,0 +1,30 @@
+mutation CreateDemoData @transaction {
+  user_insertMany(data: [
+    {
+      id: "550e8400-e29b-41d4-a716-446655440000",
+      displayName: "demouser1",
+      email: "demo1@example.com",
+      homeAddress: "123 Maple St"
+    },
+    {
+      id: "550e8400-e29b-41d4-a716-446655440001",
+      displayName: "demouser2",
+      email: "demo2@example.com",
+      homeAddress: "456 Oak St"
+    }
+  ])
+  post_insertMany(data: [
+    {
+      content: "Example post from demouser1",
+      createdAt: "2023-10-27T10:00:00Z",
+      authorId: "550e8400-e29b-41d4-a716-446655440000",
+      neighborhoodId: "550e8400-e29b-41d4-a716-446655440002"
+    },
+    {
+      content: "Example post from demouser2",
+      createdAt: "2023-10-27T11:00:00Z",
+      authorId: "550e8400-e29b-41d4-a716-446655440001",
+      neighborhoodId: "550e8400-e29b-41d4-a716-446655440002"
+    }
+  ])
+}

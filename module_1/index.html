@@ -3,14 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Auther" content="Danson Nganga" />
-    <title>Student Task Manager</title>
-    <link rel="stylesheet" href="style.css" />
-    <script type="module" src="script.js" defer></script>
+    <meta name="Author" content="Danson Nganga" />
+    <meta
+      name="description"
+      content="This is a simple website that will help me to manage my assignment, and its connected with firebase"
+    />
+    <title>my Task Manager</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Student Task Manager</h1>
+      <h1>my Task Manager</h1>
 
       <div class="form">
         <input type="text" id="title" placeholder="Task Title" />
@@ -20,16 +23,20 @@
         <input type="date" id="dueDate" />
 
         <select id="status">
-          <option value="Pending">Pending</option>
-          <option value="Completed">Completed</option>
+          <option>Pending</option>
+          <option>Completed</option>
         </select>
 
         <button id="addBtn">Add Task</button>
       </div>
 
-      <h2>My Tasks</h2>
+      <hr />
+
+      <h2>Tasks</h2>
 
       <div id="taskList"></div>
     </div>
+
+    <script type="module" src="scripts.js"></script>
   </body>
 </html>
